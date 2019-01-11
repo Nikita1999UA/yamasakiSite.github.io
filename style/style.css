@@ -1,0 +1,719 @@
+/*Стандартыне стили*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background: #fafafa;
+    position: relative;
+}
+
+*{
+    outline: none;
+}
+
+.sushi-right{
+    position: absolute;
+    top: 750px;
+    right: 0px;
+}
+.sushi-left{
+    position: absolute;
+    top: 1200px;
+    left: 0px;
+}
+.sushi-right-2{
+    position: absolute;
+    top: 1450px;
+    right: 0px;
+}
+/*шапка*/
+header{
+    height: 80px;
+    border-bottom: 1px solid salmon; 
+}
+
+.header_container{
+    max-width: 1040px;
+    margin: 0px auto;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*меню шапки*/
+.menu ul{
+    font-size: 14px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu li{
+    cursor: pointer;
+    margin: 0px 5px 0px 5px;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 16px;
+    color: #000000;
+}
+
+.menu li a:hover{
+    color: #FF6868;
+}
+
+
+
+.breadcrumbs {
+    margin: 0px; padding: 0;
+    margin-top: 20px; /* Убираем отступы */
+}
+   .breadcrumbs li {
+    display: inline;
+    align-items: center;
+     /* Выстраиваем по горизонтали */
+   }
+   .breadcrumbs li::before {
+    content: '>'; /* Разделитель */
+    margin-left: 5px; /* Отступ слева */
+    margin-right: 5px; /* Отступ справа */
+    color: #7f7f7f; /* Цвет разделителя */
+   }
+   .breadcrumbs li:first-child::before {
+    content: ''; /* Убираем разделитель для первого пункта */
+   }
+
+.breadcrumbs li a {
+    text-decoration:none;
+    font-family: roboto;
+    font-weight: 400;
+    color:  #9E9E9E;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+}
+
+.breadcrumbs li a:hover,
+.breadcrumbs li a:hover::after,
+.breadcrumbs li a.reduct,
+.breadcrumbs li a.reduct::after {
+    color: #FF6868;
+}
+
+/*сайдбар*/
+aside{
+    font-size: 12px;
+    font-weight: 900;
+    float: left;
+    width: 72px;
+    height: 100%;
+    box-shadow: gray 0px 3px 10px 0px;
+    overflow: hidden;
+    z-index: 1;
+    background: #fafafa;
+}
+
+aside .aside-menu ul{
+    width: 72px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+aside .aside-menu ul li{
+    cursor: pointer;
+    line-height: 0px;
+    width: 100%;
+    text-align: center;
+    transition: 250ms;
+}
+
+aside .aside-menu ul li a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    color: #000000; 
+}
+
+aside .aside-menu ul li:hover{
+    background-color: #FF6868;
+    color: #fff;
+}
+
+aside .aside-menu ul li p{
+    padding: 0;
+    margin: 0;/*важный костыль :)*/ 
+}
+/*Контент*/
+.container{
+    margin: 0px auto;
+    max-width: 840px;
+}
+.slider-main{
+    height: 300px;
+}
+
+.slider_main{
+    height: 300px;
+}
+
+.slider{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.slider__item1{
+    display: flex;
+    justify-content: left;
+}
+
+.slider__item1_title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 26px;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+.slider__item1_desr{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    color: #000000;
+}
+.slider__bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.slider__bottom button{
+    margin: 1px;
+}
+
+
+.slider__bottom button:hover{
+    background: white;
+    color: salmon;
+    border: 1px solid salmon;
+}
+
+.slider__bottom_price{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: #52BA0E;
+    margin-left: 15px;
+}
+.slider__bottom_old{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 29px;
+    font-size: 18px;
+    text-decoration-line: line-through;
+    color: #C4C4C4;
+}
+
+.slider__item2{
+    margin-left: 10%;
+}
+
+.slider__item2 img{
+    max-width: 400px;
+}
+
+.about-us{
+    font-weight: 700;
+    font-size: 14px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.about-us div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 240px;
+}
+.about-us div p{
+    width: 120px;
+}
+
+.about-us img{
+    display: block;
+    border-radius: 50px;
+}
+/*Ямакаси-меню*/
+.title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.title h1{
+    font-weight: bold;
+}
+
+.title ul{
+    list-style: none;
+    display: flex;
+    margin-top: 24px;
+}
+
+.title  li{
+    cursor: pointer;
+    padding-bottom: 5px;
+    margin: 0px 5px 0px 5px;
+}
+
+.title  li a {
+    text-decoration: none;
+    color: #212121;
+    
+}
+
+.title  li:hover{
+    border-bottom: 1px solid #FF6868;
+}
+/*нижнее подчеркивание для "суши"*/
+.main-li-menu{
+    position: relative;
+}
+
+.main-li-menu:before {
+    content : "";
+    position: absolute;
+    left    : 20px;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;
+    border-bottom:1px solid salmon;
+  }
+/*Суши-products*/
+.sushi{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tunets{
+    margin-top: 20px;
+    height: 370px;
+    width: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #C0C0C0;
+    background: white;
+}
+.tunets-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;
+}
+
+.tunets-title p{
+    margin-top: -10px; 
+    width: 150px;
+}
+
+.tunets-title h1{
+    position: relative;
+    color: #52ba0e;
+}
+
+.tunets-title h1:before{
+
+}
+
+.button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 200px;
+    height: 50px;
+    background: salmon;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    transition: .3s;
+}
+
+.tunets .button:hover{
+    background: white;
+    color: salmon;
+    border: 1px solid salmon;
+}
+
+.button-2{
+    cursor: pointer;
+    height: 46px;
+    width: 183px;
+    background: #fff;
+    color: black;
+    border: 1px solid salmon;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 40px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Montserrat;
+    transition: .5s;
+}
+
+.button-2 p{
+    margin: 7px 0px 0px 27px;
+}
+
+.button-2:hover{
+    background: salmon;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn__bottom{
+    display: flex;
+    justify-content: center;
+}
+/*отзывы*/
+.reviews{
+    margin-top: 10px;
+}
+
+.reviews .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.reviews .button-2{
+    cursor: pointer;
+    height: 46px;
+    width: 183px;
+    background: #fff;
+    color: black;
+    border: 1px solid salmon;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 40px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Montserrat;
+    transition: .5s;
+}
+
+.reviews .button-2:hover{
+    background: salmon;
+    color: white;
+    border: 1px solid white;
+}
+
+.reviews .button p{
+    margin-top: 7px;
+}
+
+.review{
+    width: 250px;
+}
+
+.review p{
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.reviews-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/*offers*/
+.offers{
+    text-align: center;
+}
+
+.offers .title{
+    margin: 0px auto;
+    max-width: 550px;
+}
+
+.offers .title h1{
+    margin: 50px 0px 0px 30px; 
+}
+/*Форма*/
+.register{
+    display: flex;
+    justify-content: space-around;
+}
+
+.register input{ 
+    padding-left: 30px; 
+    border-radius: 40px;
+    border: 1px solid #C0C0C0;
+    height: 40px;
+    width: 220px;
+}
+
+.register input:focus{
+    outline: none;
+    border: 1px solid salmon;
+}
+
+.submit{
+    color: white;
+    background: salmon;
+    height: 40px;
+    border-radius: 40px;
+    width: 220px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    
+}
+/*карта*/
+.position{
+    text-align: center;
+}
+
+.cart{
+    height: 345px;
+    width: 100%;
+    position: relative;
+}
+
+.cart iframe{
+    position: absolute;
+}
+/*footer*/
+footer{
+    background: #282828;
+    height: 200px;
+    width: 100%;
+    z-index: 5;
+}
+
+.footer-container{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 0px auto;
+    max-width: 840px ;
+}
+
+.footer-container ul{
+    list-style: none;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container .worktime li{
+    margin-top: 20px; 
+}
+
+.worktime{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: -20px;
+}
+
+
+
+.phone li{
+    display: flex;
+}
+
+.phone li span{
+    margin-left: 10px;
+}
+
+.contacts ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 200px;
+}
+ 
+.contacts li{
+    cursor: pointer;
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    background: white;
+    border-radius: 100%;
+}
+
+/*Иконки*/
+.icons{
+    color: #cd486b;
+    font-size: 20px;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: -20px; 
+}
+
+.fa-instagram{
+    margin: 7px 0px 0px 10px;
+    color: #cd486b;
+}
+
+.fa-facebook-square{
+    margin: 7px 0px 0px 10px;
+    color: #3b5998;
+}
+
+.fa-vk{
+    margin: 7px 0px 0px 5px;
+    color: #4c75a3;
+}
+
+
+/*акции*/
+.promotions{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.promotion{
+    margin-top: 15px;
+}
+
+.promotion-overflow{
+    width: 56%;
+    overflow: hidden;
+}
+/*круглосуточная доставка*/
+.round-the-clock{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+/*Минимальная сумма заказа*/
+.minimum-amount{
+    margin: 0px auto;
+    text-align: center;
+}
+/*Почему ямакаси*/
+.why-yamakasi{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.because{
+    margin-bottom: 30px; 
+    text-align: center;
+    width: 250px!important;
+}
+
+.because p{
+    width: 200px;
+    margin: 0px auto;
+    font-weight: 900;
+}
+
+.green-round{
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+    background: #52BA0E;
+    border-radius: 50%;
+}
+
+.green-round p{
+    color: white;
+    font-size: 30px;
+    padding-top: 30px;
+    width: 100px;
+}
+
+.why-yamakasi img{
+    border-radius: 50%;
+}
+/*информация*/
+.information{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    flex-direction: row;
+}
+
+.information div{
+    position: relative;
+    width: 285px;
+    font-weight: 900;
+}
+
+.information .far{
+    top: 17px;
+    left: -25px;
+}
+
+.information .fas{
+    top: 34px;
+    left: -25px;
+}
+
+.information .far, .information .fas{
+    color: #cd486b;
+    position: absolute;
+}

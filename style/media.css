@@ -1,0 +1,164 @@
+
+@media screen and (max-width: 1280px) {
+    .sushi-right{
+        display: none;
+    }
+
+    .sushi-left{
+        display: none;
+    }
+}
+@media screen and (max-width: 1040px) {
+    header{
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .header_container{
+        flex-direction: column;
+        height: auto;
+    }
+    .slider-main{
+        height: auto;
+    }
+
+    .slider_main{
+        height: auto;
+    }
+    
+
+    .slider__item1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .slider__bottom{
+        justify-content: center;
+    }
+
+    .about-us{
+        height: auto;
+    }
+
+    .sushi-right-2{
+        display: none;
+    }
+
+    .sushi{
+        justify-content: space-around;
+    }
+
+    .title{
+        flex-direction: column;
+    }
+
+    .title ul{
+        padding: 0;
+    }
+    
+    .reviews .title{
+        flex-direction: column;
+    }
+
+    .reviews-container{
+        justify-content: space-around;
+    }
+
+    .register{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .register input{
+        margin-top: 20px;
+    }
+    .submit{
+        margin-top: 20px;
+    }
+    footer{
+        height: auto;
+    }
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacts ul{
+        padding: 0;
+    }
+
+    .menu ul{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 724px){
+
+    .offers .title{
+        max-width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+
+    .offers .title{
+        max-width: 100%;
+    }
+    .review{
+        text-align: center;
+    }
+
+    .menu li a{
+        font-size: 12px;
+    }
+
+    .title ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title li:hover{
+        border-bottom: none;
+    }
+
+    .title li a:hover{
+        color: red;
+    }
+
+    .phone li{
+        flex-direction: column;
+        font-size: 14px;
+    }
+    .phone li span{
+        margin-left: 0px;
+    }
+
+    .icons{
+        padding: 0;
+    }
+
+    .slider{
+        margin: 15px;
+    }
+
+    .slider__item1 {
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        text-align: right;
+    }
+
+    aside{
+        display: none;
+    }
+
+    .slider__item2 img{
+        max-width: 200px;
+    }
+    
+    
+}
