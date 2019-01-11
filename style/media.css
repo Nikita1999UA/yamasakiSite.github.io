@@ -93,6 +93,30 @@
     .menu ul{
         padding: 0;
     }
+    .icons{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .promotions{
+        justify-content: space-around;
+    }
+
+    .promotion-overflow{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .promotion-2{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+
 }
 
 @media screen and (max-width: 724px){
@@ -137,9 +161,6 @@
         margin-left: 0px;
     }
 
-    .icons{
-        padding: 0;
-    }
 
     .slider{
         margin: 15px;
@@ -158,6 +179,18 @@
 
     .slider__item2 img{
         max-width: 200px;
+    }
+
+    .promotion-overflow{
+        width: 100%;
+    }
+
+    .promotion-overflow img{
+        max-width: 300px;
+    }
+
+    .promotion-2 img{
+        max-width: 300px;
     }
     
     
