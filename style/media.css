@@ -216,7 +216,7 @@
         left: -200px;
         position: fixed;
         transition: all .4s;
-        top: 100px;
+        top: 30px;
         z-index: 101;
         height: auto;
     }
