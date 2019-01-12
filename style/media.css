@@ -211,8 +211,18 @@
         text-align: center;
     }
 
-    aside{
-        display: none;
+    .aside-nav {
+        opacity: 0;
+        left: -200px;
+        position: fixed;
+        transition: all .4s;
+        top: 100px;
+        z-index: 101;
+        height: auto;
+    }
+    .aside-nav.active {
+        left: 0;
+        opacity: 1;
     }
 
     .slider__item2 img{
@@ -253,5 +263,7 @@
         margin: 0;
         text-align: center;
     }
-    
+    .menu-wrapper {
+        display: block;
+    }   
 }
