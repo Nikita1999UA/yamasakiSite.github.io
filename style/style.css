@@ -37,17 +37,31 @@ header{
     max-width: 1040px;
     margin: 0px auto;
     height: 80px;
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-evenly;
     justify-content: space-evenly;
-    align-items: center;
+    -webkit-align-items: center;
 }
 /*меню шапки*/
 .menu ul{
     font-size: 14px;
     list-style: none;
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-evenly;
     justify-content: space-evenly;
 }
 
@@ -172,13 +186,19 @@ aside .aside-menu ul li p{
 
 .slider{
     margin-top: 30px;
-    display: flex;
-    flex-direction: row;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
 }
 
 .slider__item1{
-    display: flex;
-    justify-content: left;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-justify-content: left;
 }
 
 .slider__item1_title{
@@ -200,8 +220,11 @@ aside .aside-menu ul li p{
     color: #000000;
 }
 .slider__bottom {
-    display: flex;
-    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-align-items: center;
     margin-top: 15px;
 }
 .slider__bottom button{
@@ -245,17 +268,30 @@ aside .aside-menu ul li p{
     font-weight: 700;
     font-size: 14px;
     height: 100px;
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-around;
     justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-align-items: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
     margin-top: 20px;
 }
 
 .about-us div{
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-evenly;
     justify-content: space-evenly;
+    -webkit-align-items: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -271,8 +307,16 @@ aside .aside-menu ul li p{
 }
 /*Ямакаси-меню*/
 .title{
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: start;
     justify-content: start;
+    -webkit-align-items: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -319,9 +363,16 @@ aside .aside-menu ul li p{
   }
 /*Суши-products*/
 .sushi{
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
     flex-direction: row;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
 }
 
@@ -335,9 +386,16 @@ aside .aside-menu ul li p{
     background: white;
 }
 .tunets-title{
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
     flex-direction: row;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
     padding: 0px 20px 0px 20px;
 }
@@ -411,7 +469,12 @@ aside .aside-menu ul li p{
 }
 
 .btn__bottom{
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: center;
     justify-content: center;
 }
 /*отзывы*/
@@ -420,8 +483,16 @@ aside .aside-menu ul li p{
 }
 
 .reviews .title{
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -463,8 +534,16 @@ aside .aside-menu ul li p{
 }
 
 .reviews-container{
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
     justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -484,7 +563,12 @@ aside .aside-menu ul li p{
 }
 /*Форма*/
 .register{
-    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-around;
     justify-content: space-around;
 }
 
