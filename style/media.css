@@ -96,6 +96,25 @@
     .icons{
         padding: 0;
     }
+
+    .round-the-clock{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        height: auto;
+    }
+
+    .delivery-title{
+        text-align: center;
+    }
+
+    .information{
+        justify-content: space-around;
+    }
+
+    .breadcrumbs{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 1040px) {
@@ -190,6 +209,14 @@
     }
 
     .promotion-2 img{
+        max-width: 300px;
+    }
+
+    .because{
+        width: 100%;
+    }
+
+    .round-the-clock img{
         max-width: 300px;
     }
     
