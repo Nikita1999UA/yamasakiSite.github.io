@@ -119,6 +119,7 @@
         width: 100%;
         justify-content: center;
         margin-top: 20px;
+        margin: 0 auto;
     }
 
     .about-us div p {
