@@ -11,8 +11,16 @@
 @media screen and (max-width: 1040px) {
     header{
         height: auto;
-        padding-top: 20px;
         padding-bottom: 10px;
+        border-bottom: none;
+    }
+
+    .header_container{
+        position: relative;
+    }
+
+    .logo{
+        margin-top: 20px;
     }
     .header_container{
         flex-direction: column;

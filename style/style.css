@@ -34,8 +34,11 @@ header{
 }
 
 .header_container{
-    max-width: 1040px;
-    margin: 0px auto;
+    background-color: #fafafa;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
     height: 80px;
     display: -webkit-box;
     display: -moz-box;
@@ -51,6 +54,7 @@ header{
     -webkit-justify-content: space-evenly;
     justify-content: space-evenly;
     -webkit-align-items: center;
+    border-bottom: 1px solid salmon; 
 }
 /*меню шапки*/
 .menu ul{
@@ -83,6 +87,7 @@ header{
 .menu li a:hover{
     color: #FF6868;
 }
+
 
 
 
@@ -144,6 +149,11 @@ aside .aside-menu ul{
     list-style: none;
 }
 
+
+aside .aside-menu li{
+    padding: 10px 0px 10px 0px;
+}
+
 aside .aside-menu ul li{
     cursor: pointer;
     line-height: 0px;
@@ -161,6 +171,7 @@ aside .aside-menu ul li a {
     text-align: center;
     color: #000000; 
 }
+
 
 aside .aside-menu ul li:hover{
     background-color: #FF6868;
