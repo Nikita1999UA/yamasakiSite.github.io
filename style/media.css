@@ -231,5 +231,13 @@
         max-width: 300px;
     }
     
+
+    .information{
+        justify-content: center;
+    }
+
+    .information div{
+        width: auto;
+    }
     
 }
