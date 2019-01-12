@@ -238,6 +238,12 @@
 
     .information div{
         width: auto;
+        font-size: 12px;
+    }
+
+    .offers .title h1{
+        margin: 0;
+        text-align: center;
     }
     
 }
