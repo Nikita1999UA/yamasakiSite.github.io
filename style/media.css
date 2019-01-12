@@ -115,6 +115,11 @@
     .breadcrumbs{
         text-align: center;
     }
+
+    .about-us div p {
+        width: 190px;
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 1040px) {
