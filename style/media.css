@@ -115,9 +115,14 @@
     .breadcrumbs{
         text-align: center;
     }
+    .about-us div {
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
 
     .about-us div p {
-        width: 190px;
+        width: 200px;
         margin-left: 10px;
     }
 }
