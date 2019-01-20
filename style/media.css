@@ -174,13 +174,6 @@
         text-align: center;
     }
 
-        
-    .menu ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
     .menu li a{
         font-size: 12px;
     }
@@ -218,8 +211,18 @@
         text-align: center;
     }
 
-    aside{
-        display: none;
+    .aside-nav {
+        opacity: 0;
+        left: -200px;
+        position: fixed;
+        transition: all .4s;
+        top: 30px;
+        z-index: 101;
+        height: auto;
+    }
+    .aside-nav.active {
+        left: 0;
+        opacity: 1;
     }
 
     .slider__item2 img{
@@ -261,6 +264,14 @@
         text-align: center;
     }
 
-    
-    
+    .menu-wrapper {
+        display: block;
+    }   
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

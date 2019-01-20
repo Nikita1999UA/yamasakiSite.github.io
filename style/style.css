@@ -1,6 +1,7 @@
 /*Стандартыне стили*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     padding: 0px;
@@ -8,32 +9,35 @@ body{
     position: relative;
 }
 
-*{
+* {
     outline: none;
 }
 
-.sushi-right{
+.sushi-right {
     position: absolute;
     top: 750px;
     right: 0px;
 }
-.sushi-left{
+
+.sushi-left {
     position: absolute;
     top: 1200px;
     left: 0px;
 }
-.sushi-right-2{
+
+.sushi-right-2 {
     position: absolute;
     top: 1450px;
     right: 0px;
 }
+
 /*шапка*/
-header{
+header {
     height: 80px;
-    border-bottom: 1px solid salmon; 
+    border-bottom: 1px solid salmon;
 }
 
-.header_container{
+.header_container {
     background-color: #fafafa;
     z-index: 10;
     position: fixed;
@@ -54,10 +58,11 @@ header{
     -webkit-justify-content: space-evenly;
     justify-content: space-evenly;
     -webkit-align-items: center;
-    border-bottom: 1px solid salmon; 
+    border-bottom: 1px solid salmon;
 }
+
 /*меню шапки*/
-.menu ul{
+.menu ul {
     font-size: 14px;
     list-style: none;
     display: -webkit-box;
@@ -69,12 +74,12 @@ header{
     justify-content: space-evenly;
 }
 
-.menu li{
+.menu li {
     cursor: pointer;
     padding: 15px 30px 15px 30px;
 }
 
-.menu li a{
+.menu li a {
     text-decoration: none;
     font-family: Montserrat;
     font-style: normal;
@@ -101,30 +106,42 @@ header{
 
 
 
+
+
 .breadcrumbs {
-    margin: 0px; padding: 0;
-    margin-top: 20px; /* Убираем отступы */
+    margin: 0px;
+    padding: 0;
+    margin-top: 20px;
+    /* Убираем отступы */
 }
-   .breadcrumbs li {
+
+.breadcrumbs li {
     display: inline;
     align-items: center;
-     /* Выстраиваем по горизонтали */
-   }
-   .breadcrumbs li::before {
-    content: '>'; /* Разделитель */
-    margin-left: 5px; /* Отступ слева */
-    margin-right: 5px; /* Отступ справа */
-    color: #7f7f7f; /* Цвет разделителя */
-   }
-   .breadcrumbs li:first-child::before {
-    content: ''; /* Убираем разделитель для первого пункта */
-   }
+    /* Выстраиваем по горизонтали */
+}
+
+.breadcrumbs li::before {
+    content: '>';
+    /* Разделитель */
+    margin-left: 5px;
+    /* Отступ слева */
+    margin-right: 5px;
+    /* Отступ справа */
+    color: #7f7f7f;
+    /* Цвет разделителя */
+}
+
+.breadcrumbs li:first-child::before {
+    content: '';
+    /* Убираем разделитель для первого пункта */
+}
 
 .breadcrumbs li a {
-    text-decoration:none;
+    text-decoration: none;
     font-family: roboto;
     font-weight: 400;
-    color:  #9E9E9E;
+    color: #9E9E9E;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -140,7 +157,7 @@ header{
 }
 
 /*сайдбар*/
-aside{
+aside {
     font-size: 12px;
     font-weight: 900;
     float: left;
@@ -151,7 +168,7 @@ aside{
     background: #fafafa;
 }
 
-aside .aside-menu ul{
+aside .aside-menu ul {
     width: 72px;
     margin: 0px;
     padding: 0px;
@@ -159,11 +176,11 @@ aside .aside-menu ul{
 }
 
 
-aside .aside-menu li{
+aside .aside-menu li {
     padding: 10px 0px 10px 0px;
 }
 
-aside .aside-menu ul li{
+aside .aside-menu ul li {
     cursor: pointer;
     line-height: 0px;
     width: 100%;
@@ -178,38 +195,41 @@ aside .aside-menu ul li a {
     font-weight: 500;
     line-height: normal;
     text-align: center;
-    color: #000000; 
+    color: #000000;
 }
 
 
-aside .aside-menu ul li:hover{
+aside .aside-menu ul li:hover {
     background-color: #FF6868;
     color: #fff;
 }
 
-aside .aside-menu ul li p{
+aside .aside-menu ul li p {
     padding: 0;
-    margin: 0;/*важный костыль :)*/ 
+    margin: 0;
+    /*важный костыль :)*/
 }
 
 
-.round-the-clock img{
+.round-the-clock img {
     z-index: -1;
 }
+
 /*Контент*/
-.container{
+.container {
     margin: 0px auto;
     max-width: 840px;
 }
-.slider-main{
+
+.slider-main {
     height: 300px;
 }
 
-.slider_main{
+.slider_main {
     height: 300px;
 }
 
-.slider{
+.slider {
     margin-top: 30px;
     display: -webkit-box;
     display: -moz-box;
@@ -218,7 +238,7 @@ aside .aside-menu ul li p{
     -webkit-flex-direction: row;
 }
 
-.slider__item1{
+.slider__item1 {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -226,7 +246,7 @@ aside .aside-menu ul li p{
     -webkit-justify-content: left;
 }
 
-.slider__item1_title{
+.slider__item1_title {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -237,13 +257,14 @@ aside .aside-menu ul li p{
     margin: 0;
 }
 
-.slider__item1_desr{
+.slider__item1_desr {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     line-height: 28px;
     color: #000000;
 }
+
 .slider__bottom {
     display: -webkit-box;
     display: -moz-box;
@@ -252,18 +273,19 @@ aside .aside-menu ul li p{
     -webkit-align-items: center;
     margin-top: 15px;
 }
-.slider__bottom button{
+
+.slider__bottom button {
     margin: 1px;
 }
 
 
-.slider__bottom button:hover{
+.slider__bottom button:hover {
     background: white;
     color: salmon;
     border: 1px solid salmon;
 }
 
-.slider__bottom_price{
+.slider__bottom_price {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -271,7 +293,8 @@ aside .aside-menu ul li p{
     color: #52BA0E;
     margin-left: 15px;
 }
-.slider__bottom_old{
+
+.slider__bottom_old {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
@@ -281,15 +304,15 @@ aside .aside-menu ul li p{
     color: #C4C4C4;
 }
 
-.slider__item2{
+.slider__item2 {
     margin-left: 10%;
 }
 
-.slider__item2 img{
+.slider__item2 img {
     max-width: 400px;
 }
 
-.about-us{
+.about-us {
     font-weight: 700;
     font-size: 14px;
     height: 100px;
@@ -306,7 +329,7 @@ aside .aside-menu ul li p{
     margin-top: 20px;
 }
 
-.about-us div{
+.about-us div {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -322,16 +345,18 @@ aside .aside-menu ul li p{
     flex-wrap: wrap;
     width: 240px;
 }
-.about-us div p{
+
+.about-us div p {
     width: 120px;
 }
 
-.about-us img{
+.about-us img {
     display: block;
     border-radius: 50px;
 }
+
 /*Ямакаси-меню*/
-.title{
+.title {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -347,47 +372,49 @@ aside .aside-menu ul li p{
     flex-wrap: wrap;
 }
 
-.title h1{
+.title h1 {
     font-weight: bold;
 }
 
-.title ul{
+.title ul {
     list-style: none;
     display: flex;
     margin-top: 24px;
 }
 
-.title  li{
+.title li {
     cursor: pointer;
     padding-bottom: 5px;
     margin: 0px 5px 0px 5px;
 }
 
-.title  li a {
+.title li a {
     text-decoration: none;
     color: #212121;
-    
+
 }
 
-.title  li:hover{
+.title li:hover {
     border-bottom: 1px solid #FF6868;
 }
+
 /*нижнее подчеркивание для "суши"*/
-.main-li-menu{
+.main-li-menu {
     position: relative;
 }
 
 .main-li-menu:before {
-    content : "";
+    content: "";
     position: absolute;
-    left    : 20px;
-    bottom  : 0;
-    height  : 1px;
-    width   : 50%;
-    border-bottom:1px solid salmon;
-  }
+    left: 20px;
+    bottom: 0;
+    height: 1px;
+    width: 50%;
+    border-bottom: 1px solid salmon;
+}
+
 /*Суши-products*/
-.sushi{
+.sushi {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -401,7 +428,7 @@ aside .aside-menu ul li p{
     justify-content: space-between;
 }
 
-.tunets{
+.tunets {
     margin-top: 20px;
     height: 370px;
     width: 260px;
@@ -410,7 +437,8 @@ aside .aside-menu ul li p{
     border: 1px solid #C0C0C0;
     background: white;
 }
-.tunets-title{
+
+.tunets-title {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -425,25 +453,23 @@ aside .aside-menu ul li p{
     padding: 0px 20px 0px 20px;
 }
 
-.tunets-title p{
-    margin-top: -10px; 
+.tunets-title p {
+    margin-top: -10px;
     width: 150px;
 }
 
-.tunets-title h1{
+.tunets-title h1 {
     position: relative;
     color: #52ba0e;
 }
 
-.tunets-title h1:before{
+.tunets-title h1:before {}
 
-}
-
-.tunets-btn{
+.tunets-btn {
     text-align: center;
 }
 
-.button{
+.button {
     cursor: pointer;
     text-align: center;
     color: white;
@@ -461,13 +487,13 @@ aside .aside-menu ul li p{
     transition: .3s;
 }
 
-.tunets .button:hover{
+.tunets .button:hover {
     background: white;
     color: salmon;
     border: 1px solid salmon;
 }
 
-.button-2{
+.button-2 {
     cursor: pointer;
     height: 46px;
     width: 183px;
@@ -483,17 +509,17 @@ aside .aside-menu ul li p{
     transition: .5s;
 }
 
-.button-2 p{
+.button-2 p {
     margin: 7px 0px 0px 27px;
 }
 
-.button-2:hover{
+.button-2:hover {
     background: salmon;
     color: white;
     border: 1px solid white;
 }
 
-.btn__bottom{
+.btn__bottom {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -502,12 +528,13 @@ aside .aside-menu ul li p{
     -webkit-justify-content: center;
     justify-content: center;
 }
+
 /*отзывы*/
-.reviews{
+.reviews {
     margin-top: 10px;
 }
 
-.reviews .title{
+.reviews .title {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -523,7 +550,7 @@ aside .aside-menu ul li p{
     flex-wrap: wrap;
 }
 
-.reviews .button-2{
+.reviews .button-2 {
     cursor: pointer;
     height: 46px;
     width: 183px;
@@ -539,26 +566,26 @@ aside .aside-menu ul li p{
     transition: .5s;
 }
 
-.reviews .button-2:hover{
+.reviews .button-2:hover {
     background: salmon;
     color: white;
     border: 1px solid white;
 }
 
-.reviews .button p{
+.reviews .button p {
     margin-top: 7px;
 }
 
-.review{
+.review {
     width: 250px;
 }
 
-.review p{
+.review p {
     font-size: 12px;
     font-weight: 900;
 }
 
-.reviews-container{
+.reviews-container {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -573,21 +600,23 @@ aside .aside-menu ul li p{
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 /*offers*/
-.offers{
+.offers {
     text-align: center;
 }
 
-.offers .title{
+.offers .title {
     margin: 0px auto;
     max-width: 550px;
 }
 
-.offers .title h1{
-    margin: 50px 0px 0px 30px; 
+.offers .title h1 {
+    margin: 50px 0px 0px 30px;
 }
+
 /*Форма*/
-.register{
+.register {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -597,20 +626,20 @@ aside .aside-menu ul li p{
     justify-content: space-around;
 }
 
-.register input{ 
-    padding-left: 30px; 
+.register input {
+    padding-left: 30px;
     border-radius: 40px;
     border: 1px solid #C0C0C0;
     height: 40px;
     width: 220px;
 }
 
-.register input:focus{
+.register input:focus {
     outline: none;
     border: 1px solid salmon;
 }
 
-.submit{
+.submit {
     color: white;
     background: salmon;
     height: 40px;
@@ -622,52 +651,54 @@ aside .aside-menu ul li p{
     font-weight: bold;
     font-family: Montserrat;
     letter-spacing: 1px;
-    
+
 }
+
 /*карта*/
-.position{
+.position {
     text-align: center;
 }
 
-.cart{
+.cart {
     height: 345px;
     width: 100%;
     position: relative;
 }
 
-.cart iframe{
+.cart iframe {
     position: absolute;
 }
+
 /*footer*/
-footer{
+footer {
     background: #282828;
     height: 200px;
     width: 100%;
     z-index: 5;
 }
 
-.footer-container{
+.footer-container {
     color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-direction: row;
     margin: 0px auto;
-    max-width: 840px ;
+    max-width: 840px;
 }
 
-.footer-container ul{
+.footer-container ul {
     list-style: none;
     margin-top: 25px;
     display: flex;
     flex-direction: column;
 }
 
-.footer-container .worktime li{
-    margin-top: 20px; 
+.footer-container .worktime li {
+    margin-top: 20px;
 }
 
-.worktime{
+.worktime {
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-start;
@@ -677,13 +708,14 @@ footer{
 
 
 
-.phone li{
+.phone li {
     display: flex;
 }
 
-.phone li span{
+.phone li span {
     margin-left: 10px;
 }
+
 
 .phone li a {
     text-decoration: none;
@@ -695,7 +727,7 @@ footer{
     color: #ffffff;
 }
 
-.contacts ul{
+.contacts ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -703,8 +735,8 @@ footer{
     flex-direction: row;
     width: 200px;
 }
- 
-.contacts li{
+
+.contacts li {
     cursor: pointer;
     font-size: 30px;
     width: 45px;
@@ -714,34 +746,34 @@ footer{
 }
 
 /*Иконки*/
-.icons{
+.icons {
     color: #cd486b;
     font-size: 20px;
     height: 160px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    margin-right: -20px; 
+    margin-right: -20px;
 }
 
-.fa-instagram{
+.fa-instagram {
     margin: 7px 0px 0px 10px;
     color: #cd486b;
 }
 
-.fa-facebook-square{
+.fa-facebook-square {
     margin: 7px 0px 0px 10px;
     color: #3b5998;
 }
 
-.fa-vk{
+.fa-vk {
     margin: 7px 0px 0px 5px;
     color: #4c75a3;
 }
 
 
 /*акции*/
-.promotions{
+.promotions {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -751,47 +783,50 @@ footer{
     margin-bottom: 30px;
 }
 
-.promotion{
+.promotion {
     margin-top: 15px;
 }
 
-.promotion-overflow{
+.promotion-overflow {
     width: 56%;
     overflow: hidden;
 }
+
 /*круглосуточная доставка*/
-.round-the-clock{
+.round-the-clock {
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
 }
+
 /*Минимальная сумма заказа*/
-.minimum-amount{
+.minimum-amount {
     margin: 0px auto;
     text-align: center;
 }
+
 /*Почему ямакаси*/
-.why-yamakasi{
+.why-yamakasi {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.because{
-    margin-bottom: 30px; 
+.because {
+    margin-bottom: 30px;
     text-align: center;
     width: 250px;
 }
 
-.because p{
+.because p {
     width: 200px;
     margin: 0px auto;
     font-weight: 900;
 }
 
-.green-round{
+.green-round {
     width: 100px;
     height: 100px;
     margin: 0px auto;
@@ -799,18 +834,19 @@ footer{
     border-radius: 50%;
 }
 
-.green-round p{
+.green-round p {
     color: white;
     font-size: 30px;
     padding-top: 30px;
     width: 100px;
 }
 
-.why-yamakasi img{
+.why-yamakasi img {
     border-radius: 50%;
 }
+
 /*информация*/
-.information{
+.information {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -818,28 +854,29 @@ footer{
     flex-direction: row;
 }
 
-.information div{
+.information div {
     position: relative;
     width: 285px;
     font-weight: 900;
 }
 
-.information .far{
+.information .far {
     top: 17px;
     left: -25px;
 }
 
-.information .fas{
+.information .fas {
     top: 34px;
     left: -25px;
 }
 
-.information .far, .information .fas{
+.information .far,
+.information .fas {
     color: #cd486b;
     position: absolute;
 }
 
-#test-modal{
+#test-modal {
     background: #fff;
     width: 50%;
     margin: 0 auto;
@@ -852,3 +889,65 @@ footer{
     color: salmon;
 }
 
+/* Hamburger Menu */
+
+.menu-wrapper {
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    margin: auto;
+    width: 30px;
+    height: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+    width: 30px;
+    height: 3px;
+}
+
+.hamburger-menu {
+    position: relative;
+    transform: translateY(6px);
+    background: #000;
+    transition: all 0ms 300ms;
+}
+
+.hamburger-menu.animate {
+    background: rgba(255, 255, 255, 0);
+}
+
+.hamburger-menu:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    background: #000;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    background: #000;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
